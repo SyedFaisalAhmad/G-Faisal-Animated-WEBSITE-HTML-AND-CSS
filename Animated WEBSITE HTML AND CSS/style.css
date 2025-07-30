@@ -1,0 +1,229 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  /* background-color: rgba(243, 242, 242, 0.274); */
+}
+ul {
+  list-style: none;
+  line-height: 80px;
+  display: flex;
+}
+#logo {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 80px;
+  color: #3d535f;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+b {
+  font-size: 80px;
+  color: #7f00ff;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  margin: 0px 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+a:hover {
+  color: #982ad8;
+}
+.links i {
+  font-size: 30px;
+  margin: 25px 10px;
+  color: #7f00ff;
+}
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10%;
+}
+.main::after {
+  /* position: absolute; */
+  /* margin-top: -100px; */
+  content: "";
+  height: 600px;
+  width: 600px;
+  border: 50%;
+  background-color: #7f00ff, pink;
+}
+/* Updated Before Div */
+.before {
+  position: absolute;
+  top: 20%; /* Adjust position */
+  left: 30%; /* Adjust position */
+  height: 150px; /* Adjust size */
+  width: 150px;
+  background: linear-gradient(
+    135deg,
+    rgba(127, 0, 255, 0.6),
+    rgba(255, 105, 180, 0.6)
+  ); /* Adjusted gradient with transparency */
+  animation: animateBefo 5s ease-in-out infinite; /* Smoother animation */
+  border-radius: 50%;
+}
+@keyframes animateBefo {
+  0%,
+  100% {
+    transform: translateY(20px) rotateY(180deg);
+  }
+  50% {
+    transform: translateX(-20px) rotateY(180deg);
+  }
+}
+
+.before2 {
+  position: absolute;
+  top: 60%; /* Adjust position */
+  left: -6%; /* Adjust position */
+  height: 350px; /* Adjust size */
+  width: 350px;
+  background: linear-gradient(
+    135deg,
+    rgb(128, 0, 255),
+    rgba(255, 105, 180, 0.6)
+  ); /* Adjusted gradient with transparency */
+  animation: animateBefore 5s ease-in-out infinite; /* Smoother animation */
+  border-radius: 50%;
+}
+
+/* Keyframe for .before div animation */
+@keyframes animateBefore {
+  0%,
+  100% {
+    transform: translateY(0) rotateY(180deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateY(180deg);
+  }
+}
+
+/* Updated Style for #kjkd */
+#kjkd {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  height: 70%;
+  animation: animateImageTwo 6s ease-in-out infinite;
+}
+.cols0 {
+  width: 50%;
+}
+.hello {
+  display: block;
+  font-size: 35px;
+  letter-spacing: 3px;
+  color: #3d535f;
+}
+.hello::after {
+  content: "";
+  height: 4px;
+  width: 50px;
+  background-color: #7f00ff;
+}
+h1 {
+  font-size: 6.5rem;
+  font-weight: 600;
+  color: #3d535f;
+}
+.coder {
+  color: #7f00ff;
+  text-transform: capitalize;
+}
+p {
+  font-size: 1.2rem;
+  color: #3d535f;
+}
+
+/* Buttons Section */
+.buts {
+  margin-top: 20px;
+}
+
+button {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  margin-right: 10px;
+  color: white;
+  background-color: #3d535f;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #3d535f;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #7f00ff;
+  /* box-shadow: 0 5px 15px rgba(127, 0, 255, 0.4); */
+}
+.img-box {
+  position: absolute;
+  width: 80%; /* Reduces the width to leave room for margins */
+  height: 80%; /* Keeps height in proportion */
+  top: 10%;
+  right: 10%;
+  overflow: hidden; /* Ensures any overflow is hidden */
+}
+
+#kewwe {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 50px;
+  left: 60%;
+  transform: translateX(-50%) rotateY(180deg);
+  animation: animateImageOne 4s linear infinite;
+}
+
+#kjkd {
+  position: absolute;
+  height: 80%;
+  width: auto;
+  top: 20%;
+  left: 45%;
+  animation: animateImageTwo 6s linear infinite;
+}
+
+/* Keyframe animations */
+@keyframes animateImageOne {
+  0%,
+  100% {
+    transform: translateY(0) rotateY(180deg);
+  }
+  50% {
+    transform: translateY(-20px) rotateY(180deg);
+  }
+}
+
+@keyframes animateImageTwo {
+  0%,
+  100% {
+    transform: translateY(0) rotateY(180deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateY(180deg);
+  }
+}
